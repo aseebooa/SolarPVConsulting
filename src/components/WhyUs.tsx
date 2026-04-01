@@ -26,8 +26,19 @@ const reasons = [
 
 export const WhyUs = () => {
   return (
-    <section id="why-work-with-us" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-work-with-us" className="relative py-24 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar inverter background"
+          className="w-full h-full object-cover opacity-[0.12]"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Why Work With Navig-8</h2>
           <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -40,7 +51,7 @@ export const WhyUs = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason, index) => (
-            <div key={index} className="p-8 rounded-3xl border border-slate-100 hover:border-blue-100 hover:bg-blue-50/30 transition-all group">
+            <div key={index} className="p-8 rounded-3xl border border-white/20 bg-white/40 backdrop-blur-sm hover:bg-white/60 transition-all group">
               <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:text-white transition-all">
                 <reason.icon className="w-7 h-7 text-brand-primary group-hover:text-white" />
               </div>

@@ -1,19 +1,23 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 import { BUSINESS_DETAILS } from '../constants';
 
 export const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
-      {/* Subtle background element */}
-      <div className="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-[0.03] hidden lg:block">
-        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#1e3a8a" d="M44.7,-76.4C58.3,-69.2,70.1,-57.4,78.6,-43.5C87.1,-29.6,92.3,-13.8,91.4,1.7C90.5,17.2,83.5,32.3,73.6,45.1C63.7,57.9,50.9,68.4,36.5,75.1C22.1,81.8,6.1,84.7,-10.1,83.1C-26.3,81.5,-42.7,75.4,-56.1,65.6C-69.5,55.8,-79.9,42.3,-85.4,27.1C-90.9,11.9,-91.5,-5,-86.9,-20.2C-82.3,-35.4,-72.5,-48.9,-60.1,-56.6C-47.7,-64.3,-32.7,-66.2,-18.8,-71.4C-4.9,-76.6,7.9,-85.1,23.4,-83.6C38.9,-82.1,44.7,-76.4,44.7,-76.4Z" transform="translate(200 200)" />
-        </svg>
+    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      {/* Professional Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar PV background"
+          className="w-full h-full object-cover opacity-[0.12]"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">
             <motion.div
@@ -21,9 +25,17 @@ export const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-3 py-1 rounded-full bg-blue-50 text-brand-accent text-xs font-semibold uppercase tracking-wider mb-6">
-                Independent Solar Advisory
-              </span>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="inline-block px-3 py-1 rounded-full bg-blue-50 text-brand-accent text-xs font-semibold uppercase tracking-wider">
+                  Independent Solar Advisory
+                </span>
+                <div className="flex flex-col w-5 h-3.5 overflow-hidden rounded-sm shadow-sm border border-slate-100">
+                  <div className="flex-1 bg-[#EA2839]"></div>
+                  <div className="flex-1 bg-[#1A206D]"></div>
+                  <div className="flex-1 bg-[#FFD500]"></div>
+                  <div className="flex-1 bg-[#00A551]"></div>
+                </div>
+              </div>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 leading-[1.1] mb-6 tracking-tight">
                 Make the Right Decision About Solar
               </h1>
@@ -49,21 +61,6 @@ export const Hero = () => {
                   <MessageCircle className="mr-2 w-5 h-5 text-green-600" />
                   Chat on WhatsApp
                 </a>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-500 font-medium">
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-brand-accent" />
-                  Independent advice
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-brand-accent" />
-                  No obligation
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-brand-accent" />
-                  Mauritius-focused
-                </div>
               </div>
             </motion.div>
           </div>

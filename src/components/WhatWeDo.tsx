@@ -12,8 +12,19 @@ const services = [
 
 export const WhatWeDo = () => {
   return (
-    <section id="what-we-do" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="what-we-do" className="relative py-24 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1621905252507-b354bcadccea?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar battery storage background"
+          className="w-full h-full object-cover opacity-[0.10]"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-24 items-center mb-24">
           <div>
             <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">What We Do</h2>
@@ -51,7 +62,7 @@ export const WhatWeDo = () => {
               </div>
 
               <div className="space-y-8">
-                <div className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                <div className="p-6 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/20 shadow-sm transition-all hover:bg-white/60">
                   <div className="flex items-center gap-3 mb-3">
                     <Building2 className="w-5 h-5 text-brand-accent" />
                     <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Commercial</span>
@@ -61,7 +72,7 @@ export const WhatWeDo = () => {
                   </p>
                 </div>
 
-                <div className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                <div className="p-6 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/20 shadow-sm transition-all hover:bg-white/60">
                   <div className="flex items-center gap-3 mb-3">
                     <Home className="w-5 h-5 text-brand-accent" />
                     <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Residential</span>

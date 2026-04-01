@@ -4,8 +4,19 @@ import { BUSINESS_DETAILS } from '../constants';
 
 export const TrustSection = () => {
   return (
-    <section className="py-24 bg-white border-y border-slate-100">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="relative py-24 overflow-hidden border-y border-slate-100">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar technology background"
+          className="w-full h-full object-cover opacity-[0.12]"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white"></div>
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Get Started</h2>
         <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
           Start With a Conversation

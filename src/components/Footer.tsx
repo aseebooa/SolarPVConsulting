@@ -16,6 +16,12 @@ export const Footer = () => {
                 <span className="ml-2 text-xs uppercase tracking-widest text-slate-400 font-medium">
                   Energy Advisory
                 </span>
+                <div className="ml-3 flex flex-col w-4 h-3 overflow-hidden rounded-sm shadow-sm opacity-60">
+                  <div className="flex-1 bg-[#EA2839]"></div>
+                  <div className="flex-1 bg-[#1A206D]"></div>
+                  <div className="flex-1 bg-[#FFD500]"></div>
+                  <div className="flex-1 bg-[#00A551]"></div>
+                </div>
               </Link>
             </div>
             <p className="text-slate-500 max-w-sm mb-6 leading-relaxed text-sm">
@@ -32,12 +38,6 @@ export const Footer = () => {
                 <span className="block text-slate-400 uppercase tracking-wider text-[10px] mb-1">WhatsApp</span>
                 <a href={BUSINESS_DETAILS.whatsappLink} className="hover:text-brand-primary transition-colors font-medium">
                   {BUSINESS_DETAILS.whatsapp}
-                </a>
-              </li>
-              <li>
-                <span className="block text-slate-400 uppercase tracking-wider text-[10px] mb-1">Email</span>
-                <a href={`mailto:${BUSINESS_DETAILS.email}`} className="hover:text-brand-primary transition-colors font-medium">
-                  {BUSINESS_DETAILS.email}
                 </a>
               </li>
             </ul>

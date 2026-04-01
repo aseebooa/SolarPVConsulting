@@ -80,7 +80,6 @@ export const TermsOfService = () => {
           <div className="flex-grow">
             <p className="text-slate-600 mb-4">If you have any questions regarding these terms, please contact us:</p>
             <div className="space-y-2">
-              <p className="text-slate-900 font-bold">Email: <span className="text-brand-primary font-medium">{BUSINESS_DETAILS.email}</span></p>
               <p className="text-slate-900 font-bold">WhatsApp: <span className="text-brand-primary font-medium">{BUSINESS_DETAILS.whatsapp}</span></p>
             </div>
           </div>

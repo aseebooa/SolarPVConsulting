@@ -40,8 +40,19 @@ export const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-24 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar technology background"
+          className="w-full h-full object-cover opacity-[0.10]"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto bg-slate-50 rounded-[2rem] overflow-hidden shadow-sm border border-slate-100">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 sm:p-12 lg:p-16 bg-brand-primary text-white">

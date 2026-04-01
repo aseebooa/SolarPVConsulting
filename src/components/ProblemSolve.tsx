@@ -27,6 +27,17 @@ const mistakes = [
 export const ProblemSolve = () => {
   return (
     <section id="avoid-mistakes" className="py-24 bg-slate-900 text-white overflow-hidden relative">
+      {/* Professional Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar PV cells background"
+          className="w-full h-full object-cover opacity-[0.15] grayscale"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-transparent to-slate-900"></div>
+      </div>
+
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
         <div className="absolute top-0 left-1/4 w-px h-full bg-white"></div>

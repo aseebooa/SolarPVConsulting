@@ -1,10 +1,21 @@
 import React from 'react';
-import { Building2, Home, CheckCircle2, School, Warehouse, ShoppingCart, Briefcase, Factory } from 'lucide-react';
+import { Building2, Home, CheckCircle2 } from 'lucide-react';
 
 export const WhoItsFor = () => {
   return (
-    <section id="who-we-work-with" className="py-24 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="who-we-work-with" className="relative py-24 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=1920"
+          alt="Solar installation background"
+          className="w-full h-full object-cover opacity-[0.12]"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Who We Work With</h2>
           <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -17,7 +28,7 @@ export const WhoItsFor = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Commercial Card */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+          <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-sm border border-white/20 flex flex-col h-full hover:bg-white/60 transition-all">
             <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
               <Building2 className="w-8 h-8 text-brand-primary" />
             </div>
@@ -46,18 +57,10 @@ export const WhoItsFor = () => {
                 </div>
               </div>
             </div>
-
-            <div className="pt-8 border-t border-slate-50">
-              <div className="grid grid-cols-3 gap-4 opacity-40">
-                <School className="w-6 h-6" />
-                <ShoppingCart className="w-6 h-6" />
-                <Warehouse className="w-6 h-6" />
-              </div>
-            </div>
           </div>
 
           {/* Residential Card */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-md transition-shadow">
+          <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-sm border border-white/20 flex flex-col h-full hover:bg-white/60 transition-all">
             <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
               <Home className="w-8 h-8 text-brand-primary" />
             </div>
@@ -84,14 +87,6 @@ export const WhoItsFor = () => {
                   <p className="font-semibold text-slate-900 mb-1">Strategic Focus</p>
                   <p className="text-sm text-slate-600">Bill reduction, battery storage, and future-proofing (EV integration).</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="pt-8 border-t border-slate-50">
-              <div className="grid grid-cols-3 gap-4 opacity-40">
-                <Home className="w-6 h-6" />
-                <Briefcase className="w-6 h-6" />
-                <Factory className="w-6 h-6" />
               </div>
             </div>
           </div>

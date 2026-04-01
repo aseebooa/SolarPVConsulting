@@ -37,6 +37,12 @@ export const Navbar = () => {
               <span className="ml-2 text-[10px] uppercase tracking-[0.2em] text-slate-400 font-bold hidden sm:block">
                 Energy Advisory
               </span>
+              <div className="ml-4 hidden sm:flex flex-col w-4 h-3 overflow-hidden rounded-sm shadow-sm opacity-80">
+                <div className="flex-1 bg-[#EA2839]"></div>
+                <div className="flex-1 bg-[#1A206D]"></div>
+                <div className="flex-1 bg-[#FFD500]"></div>
+                <div className="flex-1 bg-[#00A551]"></div>
+              </div>
             </Link>
           </div>
           
