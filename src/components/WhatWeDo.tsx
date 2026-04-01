@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, TrendingDown, Home, Building2 } from 'lucide-react';
 
 const services = [
   "Assess potential savings",
@@ -12,19 +12,19 @@ const services = [
 
 export const WhatWeDo = () => {
   return (
-    <section id="what-we-do" className="py-24 bg-slate-50">
+    <section id="what-we-do" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-24 items-center mb-24">
           <div>
             <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">What We Do</h2>
-            <h3 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
               Independent Guidance for Informed Decisions
             </h3>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              We help businesses understand the opportunity, avoid costly mistakes, and make informed decisions about solar energy.
+            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+              We help you understand the opportunity, avoid costly mistakes, and make informed decisions about solar energy without the pressure of a sales pitch.
             </p>
             
-            <div className="space-y-4">
+            <div className="space-y-5">
               {services.map((service, index) => (
                 <motion.div
                   key={index}
@@ -34,37 +34,47 @@ export const WhatWeDo = () => {
                   viewport={{ once: true }}
                   className="flex items-start"
                 >
-                  <CheckCircle2 className="w-6 h-6 text-brand-accent mr-3 flex-shrink-0" />
-                  <span className="text-slate-700 font-medium">{service}</span>
+                  <CheckCircle2 className="w-6 h-6 text-brand-accent mr-4 flex-shrink-0" />
+                  <span className="text-lg text-slate-700 font-medium">{service}</span>
                 </motion.div>
               ))}
             </div>
           </div>
           
-          <div className="mt-12 lg:mt-0 grid grid-cols-2 gap-4">
-            <div className="space-y-4 pt-8">
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <div className="text-3xl font-bold text-brand-primary mb-2">01</div>
-                <p className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-2">Assessment</p>
-                <p className="text-xs text-slate-500">Deep dive into your energy usage patterns.</p>
+          <div className="mt-12 lg:mt-0 relative">
+            <div className="bg-slate-50 rounded-3xl p-8 lg:p-12 border border-slate-100">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center">
+                  <TrendingDown className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-2xl font-bold text-slate-900">Example Opportunities</h4>
               </div>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <div className="text-3xl font-bold text-brand-primary mb-2">02</div>
-                <p className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-2">Strategy</p>
-                <p className="text-xs text-slate-500">Defining the optimal system configuration.</p>
+
+              <div className="space-y-8">
+                <div className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Building2 className="w-5 h-5 text-brand-accent" />
+                    <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Commercial</span>
+                  </div>
+                  <p className="text-slate-600 leading-relaxed">
+                    A school of this scale in Mauritius could potentially reduce electricity costs by several million rupees per year, subject to usage and site conditions.
+                  </p>
+                </div>
+
+                <div className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Home className="w-5 h-5 text-brand-accent" />
+                    <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Residential</span>
+                  </div>
+                  <p className="text-slate-600 leading-relaxed">
+                    A homeowner with a high electricity bill may significantly reduce monthly costs and improve energy independence with a properly sized system.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <div className="text-3xl font-bold text-brand-primary mb-2">03</div>
-                <p className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-2">Selection</p>
-                <p className="text-xs text-slate-500">Comparing quotes from trusted installers.</p>
-              </div>
-              <div className="bg-brand-primary p-8 rounded-2xl shadow-lg text-white">
-                <p className="text-sm font-medium italic">
-                  "Our goal is clarity, not a sale."
-                </p>
-              </div>
+
+              <p className="mt-8 text-xs text-slate-400 italic text-center">
+                * Figures are indicative and subject to detailed assessment.
+              </p>
             </div>
           </div>
         </div>

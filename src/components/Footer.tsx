@@ -19,26 +19,41 @@ export const Footer = () => {
               </Link>
             </div>
             <p className="text-slate-500 max-w-sm mb-6 leading-relaxed text-sm">
-              Independent solar energy consultancy helping Mauritian businesses make informed, risk-free decisions about renewable energy investments.
+              Independent solar energy consultancy helping businesses and homeowners in Mauritius make informed, risk-free decisions about renewable energy investments.
             </p>
-            <p className="text-sm font-bold text-slate-900">{BUSINESS_DETAILS.location}</p>
+            <p className="text-sm font-bold text-slate-900 mb-1">{BUSINESS_DETAILS.name}</p>
+            <p className="text-sm text-slate-600">{BUSINESS_DETAILS.location}</p>
           </div>
           
           <div>
             <h4 className="text-sm font-bold text-slate-900 uppercase tracking-widest mb-6">Contact</h4>
-            <ul className="space-y-4 text-slate-500 text-sm">
-              <li>{BUSINESS_DETAILS.whatsapp}</li>
+            <ul className="space-y-4 text-slate-600 text-sm">
+              <li>
+                <span className="block text-slate-400 uppercase tracking-wider text-[10px] mb-1">WhatsApp</span>
+                <a href={BUSINESS_DETAILS.whatsappLink} className="hover:text-brand-primary transition-colors font-medium">
+                  {BUSINESS_DETAILS.whatsapp}
+                </a>
+              </li>
+              <li>
+                <span className="block text-slate-400 uppercase tracking-wider text-[10px] mb-1">Email</span>
+                <a href={`mailto:${BUSINESS_DETAILS.email}`} className="hover:text-brand-primary transition-colors font-medium">
+                  {BUSINESS_DETAILS.email}
+                </a>
+              </li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-sm font-bold text-slate-900 uppercase tracking-widest mb-6">Legal</h4>
-            <p className="text-[10px] text-slate-400 leading-relaxed uppercase tracking-wider mb-4">
-              Any estimates or discussions are indicative and subject to detailed assessment and site conditions.
-            </p>
-            <p className="text-[10px] text-slate-400 leading-relaxed uppercase tracking-wider">
-              By using this website, you acknowledge our Privacy Policy and Terms of Service.
-            </p>
+            <div className="space-y-4">
+              <p className="text-[10px] text-slate-400 leading-relaxed uppercase tracking-wider">
+                Any estimates or discussions are indicative and subject to detailed assessment and site conditions.
+              </p>
+              <div className="flex flex-col gap-2 text-xs font-medium">
+                <Link to="/privacy-policy" className="text-slate-600 hover:text-brand-primary transition-colors">Privacy Policy</Link>
+                <Link to="/terms-of-service" className="text-slate-600 hover:text-brand-primary transition-colors">Terms of Service</Link>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -46,10 +61,9 @@ export const Footer = () => {
           <p className="text-xs text-slate-400">
             © {new Date().getFullYear()} {BUSINESS_DETAILS.name}. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-xs text-slate-400">
-            <Link to="/privacy-policy" className="hover:text-brand-primary transition-colors">Privacy Policy</Link>
-            <Link to="/terms-of-service" className="hover:text-brand-primary transition-colors">Terms of Service</Link>
-          </div>
+          <p className="text-[10px] text-slate-300 uppercase tracking-[0.2em] font-bold">
+            Independent solar advisory for Mauritius
+          </p>
         </div>
       </div>
     </footer>
