@@ -9,18 +9,20 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <Link to="/" className="flex items-center">
-                <span className="text-2xl font-bold tracking-tighter text-brand-primary">
+              <Link to="/" className="flex flex-col">
+                <span className="text-2xl font-bold tracking-tighter text-brand-primary leading-none">
                   NAVIG<span className="text-brand-accent">-8</span>
                 </span>
-                <span className="ml-2 text-xs uppercase tracking-widest text-slate-400 font-medium">
-                  Energy Advisory
-                </span>
-                <div className="ml-3 flex flex-col w-4 h-3 overflow-hidden rounded-sm shadow-sm opacity-60">
-                  <div className="flex-1 bg-[#EA2839]"></div>
-                  <div className="flex-1 bg-[#1A206D]"></div>
-                  <div className="flex-1 bg-[#FFD500]"></div>
-                  <div className="flex-1 bg-[#00A551]"></div>
+                <div className="flex items-center mt-1">
+                  <span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">
+                    Energy Advisory
+                  </span>
+                  <div className="ml-2 flex flex-col w-3.5 h-2.5 overflow-hidden rounded-sm shadow-sm opacity-60">
+                    <div className="flex-1 bg-[#EA2839]"></div>
+                    <div className="flex-1 bg-[#1A206D]"></div>
+                    <div className="flex-1 bg-[#FFD500]"></div>
+                    <div className="flex-1 bg-[#00A551]"></div>
+                  </div>
                 </div>
               </Link>
             </div>

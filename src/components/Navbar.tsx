@@ -30,18 +30,20 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center group">
-              <span className="text-2xl font-bold tracking-tighter text-brand-primary group-hover:text-brand-accent transition-colors">
+            <Link to="/" className="flex flex-col group">
+              <span className="text-2xl font-bold tracking-tighter text-brand-primary group-hover:text-brand-accent transition-colors leading-none">
                 NAVIG<span className="text-brand-accent group-hover:text-brand-primary transition-colors">-8</span>
               </span>
-              <span className="ml-2 text-[10px] uppercase tracking-[0.2em] text-slate-400 font-bold hidden sm:block">
-                Energy Advisory
-              </span>
-              <div className="ml-4 hidden sm:flex flex-col w-4 h-3 overflow-hidden rounded-sm shadow-sm opacity-80">
-                <div className="flex-1 bg-[#EA2839]"></div>
-                <div className="flex-1 bg-[#1A206D]"></div>
-                <div className="flex-1 bg-[#FFD500]"></div>
-                <div className="flex-1 bg-[#00A551]"></div>
+              <div className="flex items-center mt-1">
+                <span className="text-[9px] uppercase tracking-[0.2em] text-slate-400 font-bold">
+                  Energy Advisory
+                </span>
+                <div className="ml-2 flex flex-col w-3.5 h-2.5 overflow-hidden rounded-sm shadow-sm opacity-80">
+                  <div className="flex-1 bg-[#EA2839]"></div>
+                  <div className="flex-1 bg-[#1A206D]"></div>
+                  <div className="flex-1 bg-[#FFD500]"></div>
+                  <div className="flex-1 bg-[#00A551]"></div>
+                </div>
               </div>
             </Link>
           </div>

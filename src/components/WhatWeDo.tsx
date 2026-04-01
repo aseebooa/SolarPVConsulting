@@ -67,9 +67,22 @@ export const WhatWeDo = () => {
                     <Building2 className="w-5 h-5 text-brand-accent" />
                     <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Commercial</span>
                   </div>
-                  <p className="text-slate-600 leading-relaxed">
-                    A school of this scale in Mauritius could potentially reduce electricity costs by several million rupees per year, subject to usage and site conditions.
-                  </p>
+                  <div className="text-slate-600 leading-relaxed space-y-4">
+                    <p>
+                      A school with a monthly electricity bill in the range of Rs 300,000 – Rs 500,000 could typically support a solar system of approximately 250–400 kWp.
+                    </p>
+                    <div>
+                      <p className="font-bold text-slate-900 mb-2">This could translate to:</p>
+                      <ul className="space-y-1 list-disc list-inside ml-2">
+                        <li>Annual savings: <span className="font-semibold text-brand-primary">~Rs 3M – Rs 6M</span></li>
+                        <li>Payback period: <span className="font-semibold text-brand-primary">~4–6 years</span></li>
+                        <li>System lifetime value: <span className="font-semibold text-brand-primary">significant long-term cost reduction</span></li>
+                      </ul>
+                    </div>
+                    <p className="text-xs text-slate-500 italic border-t border-slate-100 pt-3">
+                      Actual results depend on usage patterns, available roof space, and applicable CEB scheme.
+                    </p>
+                  </div>
                 </div>
 
                 <div className="p-6 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/20 shadow-sm transition-all hover:bg-white/60">
@@ -77,9 +90,22 @@ export const WhatWeDo = () => {
                     <Home className="w-5 h-5 text-brand-accent" />
                     <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Residential</span>
                   </div>
-                  <p className="text-slate-600 leading-relaxed">
-                    A homeowner with a high electricity bill may significantly reduce monthly costs and improve energy independence with a properly sized system.
-                  </p>
+                  <div className="text-slate-600 leading-relaxed space-y-4">
+                    <p>
+                      A homeowner with a monthly bill of Rs 8,000 – Rs 15,000 could typically benefit from a 5–10 kWp system.
+                    </p>
+                    <div>
+                      <p className="font-bold text-slate-900 mb-2">This could result in:</p>
+                      <ul className="space-y-1 list-disc list-inside ml-2">
+                        <li>Monthly savings: <span className="font-semibold text-brand-primary">50–80% reduction</span></li>
+                        <li>Payback period: <span className="font-semibold text-brand-primary">~4–7 years</span></li>
+                        <li>Improved energy independence, especially with <span className="font-semibold text-brand-primary">future battery integration</span></li>
+                      </ul>
+                    </div>
+                    <p className="text-xs text-slate-500 italic border-t border-slate-100 pt-3">
+                      The optimal setup depends heavily on daytime usage and future needs (e.g. EVs, air conditioning).
+                    </p>
+                  </div>
                 </div>
               </div>
 

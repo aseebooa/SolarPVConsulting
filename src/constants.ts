@@ -13,6 +13,8 @@ export const BUSINESS_DETAILS = {
 export const NAVIGATION_LINKS = [
   { name: "What We Do", href: "#what-we-do" },
   { name: "Why Us", href: "#why-us" },
+  { name: "Financials", href: "#financial-evaluation" },
+  { name: "Estimator", href: "#roi-estimator" },
   { name: "How We Work", href: "#how-we-work" },
   { name: "Contact", href: "#contact" },
 ];

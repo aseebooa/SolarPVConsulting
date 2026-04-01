@@ -4,6 +4,8 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { WhatWeDo } from './components/WhatWeDo';
 import { WhyUs } from './components/WhyUs';
+import { FinancialEvaluation } from './components/FinancialEvaluation';
+import { ROIEstimator } from './components/ROIEstimator';
 import { ProblemSolve } from './components/ProblemSolve';
 import { HowItWorks } from './components/HowItWorks';
 import { WhoItsFor } from './components/WhoItsFor';
@@ -28,6 +30,8 @@ const HomePage = () => (
     <Hero />
     <WhatWeDo />
     <WhyUs />
+    <FinancialEvaluation />
+    <ROIEstimator />
     <ProblemSolve />
     <HowItWorks />
     <WhoItsFor />
