@@ -80,7 +80,7 @@ export const SolarRegulations = () => {
             className="p-8 rounded-2xl bg-blue-50/50 border-l-4 border-brand-primary backdrop-blur-sm shadow-sm"
           >
             <p className="text-lg sm:text-xl text-slate-800 font-medium leading-relaxed">
-              “Getting solar right in Mauritius is not just about installing panels — it’s about aligning with the right scheme, system size, and approval process.”
+              “Getting solar right in Mauritius is about aligning with the right scheme, system size, and CEB approval process.”
             </p>
           </motion.div>
 
