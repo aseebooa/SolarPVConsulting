@@ -1,29 +1,42 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { BUSINESS_DETAILS, NAVIGATION_LINKS } from '../constants';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const handleLinkClick = (href: string) => {
+    setIsOpen(false);
+    if (!isHomePage) {
+      // If not on home page, navigation to anchors won't work directly
+      // This is a simple implementation, ideally we'd navigate to / and then scroll
+    }
+  };
 
   return (
     <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-xl font-bold tracking-tighter text-brand-primary">
-              NAVIG<span className="text-brand-accent">-8</span>
-            </span>
-            <span className="ml-2 text-xs uppercase tracking-widest text-slate-400 font-medium hidden sm:block">
-              Energy Advisory
-            </span>
+            <Link to="/" className="flex items-center">
+              <span className="text-xl font-bold tracking-tighter text-brand-primary">
+                NAVIG<span className="text-brand-accent">-8</span>
+              </span>
+              <span className="ml-2 text-xs uppercase tracking-widest text-slate-400 font-medium hidden sm:block">
+                Energy Advisory
+              </span>
+            </Link>
           </div>
           
           <div className="hidden md:flex space-x-8 items-center">
             {NAVIGATION_LINKS.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
+                href={isHomePage ? link.href : `/${link.href}`}
                 className="text-sm font-medium text-slate-600 hover:text-brand-primary transition-colors"
               >
                 {link.name}
@@ -62,7 +75,7 @@ export const Navbar = () => {
               {NAVIGATION_LINKS.map((link) => (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href={isHomePage ? link.href : `/${link.href}`}
                   onClick={() => setIsOpen(false)}
                   className="block px-3 py-4 text-base font-medium text-slate-600 hover:text-brand-primary border-b border-slate-50"
                 >

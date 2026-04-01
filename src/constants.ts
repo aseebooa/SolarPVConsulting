@@ -4,9 +4,10 @@
 export const BUSINESS_DETAILS = {
   name: "Navig-8 Energy Advisory",
   location: "Mauritius",
-  whatsapp: "+23051234567", // Replace with actual number
-  email: "hello@navig8energy.com", // Replace with actual email
-  whatsappLink: "https://wa.me/23051234567", // Replace with actual link
+  whatsapp: "+230 54 81 81 69",
+  whatsappLink: "https://wa.me/23054818169",
+  email: "asveen.seebooa@gmail.com", // Used for legal contact
+  effectiveDate: "April 1, 2026",
 };
 
 export const NAVIGATION_LINKS = [

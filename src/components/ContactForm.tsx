@@ -1,16 +1,42 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Send, MessageCircle, CheckCircle } from 'lucide-react';
+import { MessageCircle, CheckCircle } from 'lucide-react';
 import { BUSINESS_DETAILS } from '../constants';
 
 export const ContactForm = () => {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    // Simulate submission
-    setTimeout(() => setStatus('success'), 1500);
+    
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = {
+      name: formData.get('name'),
+      company: formData.get('company'),
+      contact: formData.get('contact'),
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error sending your message. Please try again or contact us via WhatsApp.');
+      setStatus('idle');
+    }
   };
 
   return (
@@ -32,15 +58,6 @@ export const ContactForm = () => {
                   <div>
                     <p className="text-xs text-blue-200 uppercase tracking-widest font-bold">WhatsApp</p>
                     <p className="font-medium">{BUSINESS_DETAILS.whatsapp}</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4">
-                    <Send className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-blue-200 uppercase tracking-widest font-bold">Email</p>
-                    <p className="font-medium">{BUSINESS_DETAILS.email}</p>
                   </div>
                 </div>
               </div>
@@ -84,6 +101,7 @@ export const ContactForm = () => {
                       <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Name</label>
                       <input
                         required
+                        name="name"
                         type="text"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
                         placeholder="Your name"
@@ -93,6 +111,7 @@ export const ContactForm = () => {
                       <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Company</label>
                       <input
                         required
+                        name="company"
                         type="text"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
                         placeholder="Company name"
@@ -103,6 +122,7 @@ export const ContactForm = () => {
                     <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Email or Phone</label>
                     <input
                       required
+                      name="contact"
                       type="text"
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
                       placeholder="How can we reach you?"
@@ -111,6 +131,7 @@ export const ContactForm = () => {
                   <div>
                     <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Message</label>
                     <textarea
+                      name="message"
                       rows={4}
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all resize-none"
                       placeholder="Briefly describe your situation"
@@ -123,6 +144,9 @@ export const ContactForm = () => {
                   >
                     {status === 'submitting' ? 'Sending...' : 'Request a Discussion'}
                   </button>
+                  <p className="text-[10px] text-slate-400 text-center uppercase tracking-wider mt-4">
+                    By using this website, you acknowledge our Privacy Policy and Terms of Service.
+                  </p>
                 </form>
               )}
             </div>
