@@ -9,7 +9,7 @@ export const Hero = () => {
       {/* Professional Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+          src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=800"
           alt="Solar PV background"
           className="w-full h-full object-cover opacity-[0.12]"
           referrerPolicy="no-referrer"
@@ -73,7 +73,7 @@ export const Hero = () => {
               className="relative rounded-3xl overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=800"
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
                 alt="Rooftop solar installation on a modern building"
                 className="w-full h-[600px] object-cover"
                 referrerPolicy="no-referrer"

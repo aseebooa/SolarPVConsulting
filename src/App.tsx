@@ -8,6 +8,7 @@ import { ProblemSolve } from './components/ProblemSolve';
 import { HowItWorks } from './components/HowItWorks';
 import { WhoItsFor } from './components/WhoItsFor';
 import { SolarConcepts } from './components/SolarConcepts';
+import { SolarRegulations } from './components/SolarRegulations';
 import { TrustSection } from './components/TrustSection';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
@@ -31,6 +32,7 @@ const HomePage = () => (
     <HowItWorks />
     <WhoItsFor />
     <SolarConcepts />
+    <SolarRegulations />
     <TrustSection />
     <ContactForm />
   </>
