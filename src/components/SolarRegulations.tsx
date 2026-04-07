@@ -46,7 +46,7 @@ export const SolarRegulations = () => {
             Navigating Solar Regulations in Mauritius
           </h3>
           <p className="text-xl text-slate-600 leading-relaxed">
-            Solar systems in Mauritius must comply with specific Central Electricity Board (CEB) schemes and technical requirements. Understanding these is essential to avoid delays, rework, or incorrect system design.
+            You don’t need to understand every technical detail — only how the rules affect your decision. We help you navigate CEB schemes and technical requirements to avoid costly delays.
           </p>
         </div>
 

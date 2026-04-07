@@ -51,12 +51,12 @@ export const SolarConcepts = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Understanding Solar</h2>
+          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Step 6: Build Confidence</h2>
           <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             What Actually Matters
           </h3>
           <p className="text-xl text-slate-600 leading-relaxed">
-            You don’t need to understand everything about solar. But a few key elements have a major impact on cost, performance, and long-term value.
+            You don’t need to understand everything — only what affects your decision. A few key elements have a major impact on cost, performance, and long-term value.
           </p>
         </div>
 

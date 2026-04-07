@@ -25,7 +25,7 @@ export const WhatWeDo = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-24 items-center mb-24">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-24 items-center">
           <div>
             <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">What We Do</h2>
             <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -53,66 +53,21 @@ export const WhatWeDo = () => {
           </div>
           
           <div className="mt-12 lg:mt-0 relative">
-            <div className="bg-slate-50 rounded-3xl p-8 lg:p-12 border border-slate-100">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-brand-primary rounded-xl flex items-center justify-center">
-                  <TrendingDown className="w-6 h-6 text-white" />
-                </div>
-                <h4 className="text-2xl font-bold text-slate-900">Example Opportunities</h4>
-              </div>
-
-              <div className="space-y-8">
-                <div className="p-6 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/20 shadow-sm transition-all hover:bg-white/60">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Building2 className="w-5 h-5 text-brand-accent" />
-                    <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Commercial</span>
-                  </div>
-                  <div className="text-slate-600 leading-relaxed space-y-4">
-                    <p>
-                      A school with a monthly electricity bill in the range of Rs 300,000 – Rs 500,000 could typically support a solar system of approximately 250–400 kWp.
-                    </p>
-                    <div>
-                      <p className="font-bold text-slate-900 mb-2">This could translate to:</p>
-                      <ul className="space-y-1 list-disc list-inside ml-2">
-                        <li>Annual savings: <span className="font-semibold text-brand-primary">~Rs 3M – Rs 6M</span></li>
-                        <li>Payback period: <span className="font-semibold text-brand-primary">~4–6 years</span></li>
-                        <li>System lifetime value: <span className="font-semibold text-brand-primary">significant long-term cost reduction</span></li>
-                      </ul>
-                    </div>
-                    <p className="text-xs text-slate-500 italic border-t border-slate-100 pt-3">
-                      Actual results depend on usage patterns, available roof space, and applicable CEB scheme.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-white/40 backdrop-blur-sm rounded-2xl border border-white/20 shadow-sm transition-all hover:bg-white/60">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Home className="w-5 h-5 text-brand-accent" />
-                    <span className="font-bold text-slate-900 uppercase tracking-wider text-sm">Residential</span>
-                  </div>
-                  <div className="text-slate-600 leading-relaxed space-y-4">
-                    <p>
-                      A homeowner with a monthly bill of Rs 8,000 – Rs 15,000 could typically benefit from a 5–10 kWp system.
-                    </p>
-                    <div>
-                      <p className="font-bold text-slate-900 mb-2">This could result in:</p>
-                      <ul className="space-y-1 list-disc list-inside ml-2">
-                        <li>Monthly savings: <span className="font-semibold text-brand-primary">50–80% reduction</span></li>
-                        <li>Payback period: <span className="font-semibold text-brand-primary">~4–7 years</span></li>
-                        <li>Improved energy independence, especially with <span className="font-semibold text-brand-primary">future battery integration</span></li>
-                      </ul>
-                    </div>
-                    <p className="text-xs text-slate-500 italic border-t border-slate-100 pt-3">
-                      The optimal setup depends heavily on daytime usage and future needs (e.g. EVs, air conditioning).
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-8 text-xs text-slate-400 italic text-center">
-                * Figures are indicative and subject to detailed assessment.
-              </p>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative rounded-3xl overflow-hidden shadow-2xl"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+                alt="Solar installation"
+                className="w-full h-[500px] object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { WhatWeDo } from './components/WhatWeDo';
 import { WhyUs } from './components/WhyUs';
 import { FinancialEvaluation } from './components/FinancialEvaluation';
 import { ROIEstimator } from './components/ROIEstimator';
+import { ExampleOpportunities } from './components/ExampleOpportunities';
 import { ProblemSolve } from './components/ProblemSolve';
 import { HowItWorks } from './components/HowItWorks';
 import { WhoItsFor } from './components/WhoItsFor';
@@ -29,14 +30,15 @@ const HomePage = () => (
   <>
     <Hero />
     <WhatWeDo />
-    <WhyUs />
     <FinancialEvaluation />
     <ROIEstimator />
-    <ProblemSolve />
-    <HowItWorks />
-    <WhoItsFor />
+    <WhyUs />
+    <ExampleOpportunities />
     <SolarConcepts />
     <SolarRegulations />
+    <HowItWorks />
+    <WhoItsFor />
+    <ProblemSolve />
     <TrustSection />
     <ContactForm />
   </>

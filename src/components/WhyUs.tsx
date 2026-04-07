@@ -39,14 +39,17 @@ export const WhyUs = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Why Work With Navig-8</h2>
-          <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
-            Expertise Built on Trust and Independence
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Step 4: Understand the Risks</h2>
+          <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
+            Why Work With an Independent Advisor?
           </h3>
-          <p className="text-xl text-slate-600 leading-relaxed">
-            We bridge the gap between complex energy technology and practical decisions, positioning ourselves as your dedicated decision guide.
+          <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            Most people go directly to installers — but this can create problems. An installer’s goal is to sell you a system; our goal is to ensure that system actually makes sense for you.
           </p>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-brand-primary text-sm font-bold">
+            “Because once you commit, it becomes difficult and costly to reverse the decision.”
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

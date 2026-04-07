@@ -37,13 +37,13 @@ export const Hero = () => {
                 </div>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 leading-[1.1] mb-6 tracking-tight">
-                Make the Right Decision About Solar
+                Make the Right Financial Decision About Solar
               </h1>
               <p className="text-xl lg:text-2xl text-slate-700 mb-6 font-medium leading-relaxed">
                 Independent advice for businesses and homeowners in Mauritius considering solar energy.
               </p>
               <p className="text-lg text-slate-500 mb-10 max-w-2xl leading-relaxed">
-                Before committing to a significant investment, get clarity on costs, savings, system size, and the best approach for your situation.
+                Understand your potential savings, payback, and whether solar is worth it — before committing.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">

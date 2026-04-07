@@ -45,17 +45,20 @@ export const FinancialEvaluation = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Financial Clarity</p>
-          <h2 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <p className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Step 2: Clarity on the Numbers</p>
+          <h2 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
             Is Solar a Good Investment?
           </h2>
-          <p className="text-xl text-slate-600 leading-relaxed">
-            Adopting Solar is more than technical decision. It’s a financial one. We help you understand whether it actually makes sense for your business or home before you commit.
+          <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            Before anything else, you need to understand the financials. Solar is not just a technical decision — it’s a financial one.
           </p>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-brand-primary text-sm font-bold">
+            “We help you understand whether it actually makes sense before you commit.”
+          </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 mb-16">
+        <div className="flex flex-wrap justify-center gap-8 mb-20">
           {financialFactors.map((factor, index) => (
             <motion.div
               key={index}

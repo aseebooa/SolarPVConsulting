@@ -56,9 +56,9 @@ export const ContactForm = () => {
         <div className="max-w-5xl mx-auto bg-slate-50 rounded-[2rem] overflow-hidden shadow-sm border border-slate-100">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 sm:p-12 lg:p-16 bg-brand-primary text-white">
-              <h2 className="text-3xl font-bold mb-6">Start With a Conversation</h2>
+              <h2 className="text-3xl font-bold mb-6">Step 7: Take the Next Step</h2>
               <p className="text-lg text-blue-100 mb-10">
-                If you are considering solar, we’re happy to discuss your situation and share initial insights. No pressure, just clarity.
+                If you’re considering solar, the first step is simply to understand whether it makes sense. We’re here to provide that clarity.
               </p>
               
               <div className="space-y-6">
