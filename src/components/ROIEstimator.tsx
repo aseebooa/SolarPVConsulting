@@ -174,7 +174,7 @@ export const ROIEstimator = () => {
     <section id="roi-estimator" className="relative py-24 overflow-hidden bg-slate-50">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Step 3: Indicative Estimate</h2>
+          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">Indicative Estimate</h2>
           <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             This is how we start most discussions
           </h3>

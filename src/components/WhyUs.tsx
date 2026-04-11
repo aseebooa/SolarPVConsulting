@@ -40,7 +40,7 @@ export const WhyUs = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Step 4: Understand the Risks</h2>
+          <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Understand the Risks</h2>
           <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
             Why Work With an Independent Advisor?
           </h3>

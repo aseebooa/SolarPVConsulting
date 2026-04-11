@@ -46,7 +46,7 @@ export const FinancialEvaluation = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Step 2: Clarity on the Numbers</p>
+          <p className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-6">Clarity on the Numbers</p>
           <h2 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-8 tracking-tight">
             Is Solar a Good Investment?
           </h2>

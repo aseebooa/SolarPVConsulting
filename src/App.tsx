@@ -7,11 +7,6 @@ import { WhyUs } from './components/WhyUs';
 import { FinancialEvaluation } from './components/FinancialEvaluation';
 import { ROIEstimator } from './components/ROIEstimator';
 import { ExampleOpportunities } from './components/ExampleOpportunities';
-import { ProblemSolve } from './components/ProblemSolve';
-import { HowItWorks } from './components/HowItWorks';
-import { WhoItsFor } from './components/WhoItsFor';
-import { SolarConcepts } from './components/SolarConcepts';
-import { SolarRegulations } from './components/SolarRegulations';
 import { TrustSection } from './components/TrustSection';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
@@ -34,11 +29,6 @@ const HomePage = () => (
     <ROIEstimator />
     <WhyUs />
     <ExampleOpportunities />
-    <SolarConcepts />
-    <SolarRegulations />
-    <HowItWorks />
-    <WhoItsFor />
-    <ProblemSolve />
     <TrustSection />
     <ContactForm />
   </>
