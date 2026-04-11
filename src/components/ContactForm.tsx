@@ -44,7 +44,7 @@ export const ContactForm = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+          src="https://images.unsplash.com/photo-1559302995-f0a16a50083c?auto=format&fit=crop&q=80&w=1920"
           alt="Solar technology background"
           className="w-full h-full object-cover opacity-[0.10]"
           referrerPolicy="no-referrer"

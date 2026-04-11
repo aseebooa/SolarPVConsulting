@@ -3,11 +3,11 @@ import { motion } from 'motion/react';
 import { CheckCircle2, TrendingDown, Home, Building2 } from 'lucide-react';
 
 const services = [
-  "Assess potential savings",
-  "Recommend appropriate system size",
-  "Advise on whether a battery is needed",
-  "Compare supplier options",
-  "Guide you through the decision process"
+  "Assess potential savings and payback",
+  "Choose the right system size for your needs",
+  "Select the right brand and technology",
+  "Identify the right supplier and installer",
+  "Avoid the pressure of a sales pitch"
 ];
 
 export const WhatWeDo = () => {
@@ -29,10 +29,10 @@ export const WhatWeDo = () => {
           <div>
             <h2 className="text-sm font-bold text-brand-accent uppercase tracking-widest mb-4">What We Do</h2>
             <h3 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
-              Independent Guidance for Informed Decisions
+              Helping You Make the Right Choices
             </h3>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              We help you understand the opportunity, avoid costly mistakes, and make informed decisions about solar energy without the pressure of a sales pitch.
+              We provide the independent clarity you need to navigate the entire solar journey. From technical specs to supplier selection, we ensure you get it right the first time.
             </p>
             
             <div className="space-y-5">
@@ -61,7 +61,7 @@ export const WhatWeDo = () => {
               className="relative rounded-3xl overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920"
+                src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80&w=1920"
                 alt="Solar installation"
                 className="w-full h-[500px] object-cover"
                 referrerPolicy="no-referrer"
